@@ -107,10 +107,6 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {}
-
-#battery {}
-
 #battery.charging,
 #battery.plugged {
     color: pink;
@@ -137,25 +133,11 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {}
-
-#memory {}
-
-#disk {}
-
-#backlight {}
-
-#network {}
-
-#network.disconnected {}
-
-#pulseaudio {}
-
 #pulseaudio.muted {
     color: pink
 }
 
-#wireplumber {}
+
 
 #wireplumber.muted {
     color: pink
@@ -165,17 +147,9 @@ label:focus {
     min-width: 100px;
 }
 
-#custom-media.custom-spotify {}
-
-#custom-media.custom-vlc {}
-
-#temperature {}
-
 #temperature.critical {
     color: pink;
 }
-
-#tray {}
 
 #tray>.passive {
     -gtk-icon-effect: dim;
@@ -184,8 +158,6 @@ label:focus {
 #tray>.needs-attention {
     -gtk-icon-effect: highlight;
 }
-
-#idle_inhibitor {}
 
 #idle_inhibitor.activated {
     color: pink;
@@ -210,8 +182,6 @@ label:focus {
 #keyboard-state>label.locked {
     color: pink;
 }
-
-#scratchpad {}
 
 #scratchpad.empty {
     background-color: transparent;

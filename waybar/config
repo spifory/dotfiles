@@ -3,14 +3,10 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing":4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/mode",
-        "hyprland/scratchpad"
-    ],
-    "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
@@ -52,19 +48,6 @@
             "locked": "",
             "unlocked": ""
         }
-    },
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "hyprland/cratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": [
-            "",
-            ""
-        ],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
     },
     "idle_inhibitor": {
         "format": "{icon}",
@@ -127,7 +110,6 @@
             "",
             ""
         ],
-        "format-mode": "powerprofilesctl get",
         "on-click": "powerprofilesctl set power-saver",
         "on-click-middle": "powerprofilesctl set balanced",
         "on-click-right": "powerprofilesctl set performance"
@@ -142,7 +124,6 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
