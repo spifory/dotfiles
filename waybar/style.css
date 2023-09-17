@@ -115,16 +115,16 @@ button:hover {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
+        background-color: pink;
         color: #000000;
+        border-radius: 15px;
     }
 }
 
 #battery.critical:not(.charging) {
-    color: pink;
-    /* the one time pink is bad */
+    color: pink; /* the one time pink is bad */
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
