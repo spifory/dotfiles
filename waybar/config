@@ -30,11 +30,12 @@
         "warp-on-scroll": false,
         "format": "{name}: {icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
+            "1": "", // browser, usually for Firefox
+            "2": "", // chatting, usually for Discord
+            "3": "", // coding/shell work, usually for VSCode (and/or kitty) 
+            "4": "", // music, usually for Spotify
+            "5": "", // files, usually for Nautilus
+            "6": "", // games, usually for Steam (and/or Steam games)
             "urgent": "",
             "focused": "",
             "default": ""
