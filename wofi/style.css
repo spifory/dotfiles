@@ -1,0 +1,13 @@
+#window, #input {
+    background-color: #56326A;
+    border-radius: 20px;
+    opacity: 0.97;
+}
+
+#entry {
+    padding-left: 20px;
+}
+
+#img {
+    margin-right: 6px;
+}
