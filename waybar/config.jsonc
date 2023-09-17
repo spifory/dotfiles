@@ -95,8 +95,8 @@
         "interval": 1,
         "states": {
             "good": 95,
-            "warning": 30,
-            "critical": 15
+            "warning": 20,
+            "critical": 5
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
