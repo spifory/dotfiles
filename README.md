@@ -7,7 +7,7 @@ My Linux configuration files.
 ## Things used
 
 - Linux Distribution: [EndeavourOS](https://endeavouros.com/) _for now™_
-- Window/Display Manager: [Hyprland](https://hyprland.org/)
+- Desktop Environment/Window Manager: [Hyprland](https://hyprland.org/)
 - App Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi/)
 - Task Bar: [Waybar](https://github.com/Alexays/Waybar/)
 - Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
