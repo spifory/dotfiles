@@ -3,6 +3,7 @@
 My Linux configuration files.
 
 ![Preview of desktop](./_preview.png)
+![Preview of desktop with everything](./_messy_preview.png)
 
 ## Things used
 
