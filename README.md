@@ -1,0 +1,16 @@
+# dotfiles
+
+My Linux configuration files.
+
+![Preview of desktop](./_preview.png)
+
+## Things used
+
+- Linux Distribution: [EndeavourOS](https://endeavouros.com/) _for now™_
+- Window/Display Manager: [Hyprland](https://hyprland.org/)
+- App Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi/)
+- Task Bar: [Waybar](https://github.com/Alexays/Waybar/)
+- Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
+- Notifications: [dunst](https://dunst-project.org/)
+- Clipboard Manager: [cliphist](https://github.com/sentriz/cliphist/)
+- Screenshot Tool: [grimblast](https://github.com/hyprwm/contrib/)
