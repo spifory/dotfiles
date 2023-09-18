@@ -1,7 +1,6 @@
 #window, #input {
-    background-color: #56326A;
+    background-color: rgba(36, 2, 62, 0.97);
     border-radius: 20px;
-    opacity: 0.97;
 }
 
 #entry {
