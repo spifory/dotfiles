@@ -65,7 +65,7 @@
         "interval": 1,
         "format": "{:%H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B %R}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%A %F}"
+        "format-alt": "{:%c}"
     },
     "cpu": {
         "interval": 5,
@@ -148,5 +148,10 @@
         },
         "on-click": "amixer set Master toggle",
         "on-click-right": "pavucontrol"
+    },
+    "hyprland/language": {
+        "format": "{} {flag}",
+        "tooltip-format": "{long}",
+        "keyboard-name": "at-translated-set-2-keyboard"
     }
 }
