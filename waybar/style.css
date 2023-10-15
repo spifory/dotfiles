@@ -1,190 +1,103 @@
-
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 17px;
+    /* `otf-font-awesome-5` is required to be installed for icons */
+   font-family: Ubuntu, "Font Awesome 5 Free Solid";
+    font-size: 15px;
 }
 
 window#waybar {
-    background-color: rgba(36, 2, 62, 0.5);
-    color: #ce9eff;
-    opacity: 0.85;
-    transition-property: background-color;
-    transition-duration: .5s;
-    border-radius: 20px;
+    background-color: #17171f;
+    opacity: 0.63;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
+#custom-wofi, #custom-media, #workspaces, #tray {
+    margin-left: 10;
+    margin-right: 10;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
 }
 
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #3F3F3F;
+#custom-wofi {
+    font-size: 19.5px;
 }
 
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-
-button {
-    /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
-}
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-button:hover {
-    background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+#workspaces button.active {
+    color: #06e3ac;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ce9eff;
-}
-
-#workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
-}
-
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad {
-    padding: 0 10px;
-    color: #ce9eff;
-}
-
-#window,
-#workspaces {
-    margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-    margin-right: 0;
-}
-
-#battery.charging,
-#battery.plugged {
-    color: pink;
-}
-
-@keyframes blink {
-    to {
-        background-color: pink;
-        color: #000000;
-        border-radius: 15px;
-    }
-}
-
-#battery.critical:not(.charging) {
-    color: pink; /* the one time pink is bad */
-    animation-name: blink;
-    animation-duration: 2.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-label:focus {
-    background-color: #000000;
-}
-
-#pulseaudio.muted {
-    color: pink
-}
-
-
-
-#wireplumber.muted {
-    color: pink
+    color: #8665a5;
 }
 
 #custom-media {
-    min-width: 100px;
+    color: #357fe6;
 }
 
-#temperature.critical {
-    color: pink;
+#custom-wofi,
+#workspaces,
+#custom-media,
+#pulseaudio,
+#pulseaudio.microphone,
+#network,
+#backlight,
+#battery,
+#clock,
+#tray,
+#cpu,
+#memory,
+#disk,
+#language,
+#user {
+    margin-top: 8;
+    margin-bottom: 10;
+    background-color: #303244;
 }
 
-#tray>.passive {
-    -gtk-icon-effect: dim;
+#pulseaudio:not(.microphone) {
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    padding-left: 15px;
+}
+#clock {
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    padding-right: 15px;
 }
 
-#tray>.needs-attention {
-    -gtk-icon-effect: highlight;
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#clock {
+    padding-right: 15;
 }
 
-#idle_inhibitor.activated {
-    color: pink;
+#pulseaudio {
+    color: #e65ca3;
 }
 
-#language {
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+#network {
+    color: #e26643;
 }
 
-#keyboard-state {
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
+#backlight {
+    color: #f514db;
 }
 
-#keyboard-state>label {
-    padding: 0 5px;
+#battery {
+    color: #c21e44;
 }
 
-#keyboard-state>label.locked {
-    color: pink;
+#clock {
+    color: #5866e1;
 }
 
-#scratchpad.empty {
-    background-color: transparent;
+#tray {
+    margin-left: 50;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
+#custom-wofi button:hover {
+    color: #89b4fa
+}

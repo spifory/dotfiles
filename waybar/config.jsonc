@@ -1,111 +1,79 @@
 {
-    "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 60, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    "spacing":4, // Gaps between modules (4px)
-    // Choose the order of the modules
+    "layer": "top",
+    "position": "top",
+    "height": 50,
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/window"
+        "custom/wofi",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "custom/media"
     ],
     "modules-right": [
-        "idle_inhibitor",
         "pulseaudio",
+        "pulseaudio#microphone",
         "network",
-        "cpu",
-        "memory",
-        "temperature",
         "backlight",
-        "keyboard-state",
-        "hyprland/language",
         "battery",
         "clock",
         "tray"
     ],
-    // Modules configuration
+    "custom/wofi": {
+        "format": "",
+        "on-click": "pkill wofi || wofi",
+        "tooltip": false
+    },
     "hyprland/workspaces": {
-        "disable-scroll": true,
+        "format": "{icon}",
         "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{name}: {icon}",
         "format-icons": {
-            "1": "", // browser, usually for Firefox
-            "2": "", // chatting, usually for Discord
-            "3": "", // coding/shell work, usually for VSCode (and/or kitty) 
-            "4": "", // music, usually for Spotify
-            "5": "", // files, usually for Nautilus
-            "6": "", // games, usually for Steam (and/or Steam games)
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
             "urgent": "",
             "focused": "",
             "default": ""
         }
     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
-    },
-    "clock": {
+    "custom/media": {
+        /* because mpd doesn't want to work */
+        "format": "{}",
         "interval": 1,
-        "format": "{:%H:%M:%S}",
-        "tooltip-format": "<big>{:%Y %B %R}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%c}"
+        "exec": "$XDG_CONFIG_HOME/hypr/scripts/player-status.sh",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl previous"
     },
-    "cpu": {
-        "interval": 5,
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "interval": 5,
-        "format": "{}% "
-    },
-    "temperature": {
-        "interval": 5,
-        "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
         "format-icons": [
-            "",
-            "",
-            ""
-        ]
+            "",
+            "",
+            ""
+        ],
+        "format-muted": " muted",
+        "on-click": "amixer set Master toggle"
+    },
+    "pulseaudio#microphone": {
+        "format": " {format_source}",
+        "format-source-muted": " muted",
+        "on-click-right": "pavucontrol"
+    },
+    "network": {
+        "interval": 5,
+        "format": " {bandwidthDownBits} /  {bandwidthUpBits}",
+        "format-alt": " {essid} ({signalStrength}%)"
     },
     "backlight": {
-        "device": "acpi_video1",
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format": " {percent}%",
+        "on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh up",
+        "on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh down"
     },
     "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
         "interval": 1,
-        "states": {
-            "good": 95,
-            "warning": 20,
-            "critical": 5
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": [
             "",
             "",
@@ -113,46 +81,17 @@
             "",
             ""
         ],
-        "on-click": "powerprofilesctl set power-saver",
-        "on-click-middle": "powerprofilesctl set balanced",
-        "on-click-right": "powerprofilesctl set performance"
+        "on-click": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh power-saver",
+        "on-click-middle": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh balanced",
+        "on-click-right": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh performance"
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click-right": "nm-connection-editor"
+    "clock": {
+        "interval": 1,
+        "format": " {:%T}",
+        "format-alt": " {:%c}"
     },
-    "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        },
-        "on-click": "amixer set Master toggle",
-        "on-click-right": "pavucontrol"
-    },
-    "hyprland/language": {
-        "format": "{} {flag}",
-        "tooltip-format": "{long}",
-        "keyboard-name": "at-translated-set-2-keyboard"
+    "tray": {
+        "spacing": 13,
+        "icon-size": 13
     }
 }

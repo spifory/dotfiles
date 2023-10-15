@@ -1,10 +1,21 @@
+* {
+    font-family: Ubuntu, sans-serif;
+}
+
 #window, #input {
-    background-color: rgba(36, 2, 62, 0.97);
+    background-color: #13141b;
     border-radius: 20px;
+    opacity: 0.80;
 }
 
 #entry {
+    border-radius: 20px;
     padding-left: 20px;
+}
+
+#entry:selected {
+    border-radius: 20px;
+    background-color: #362279;
 }
 
 #img {

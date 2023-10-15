@@ -1,0 +1,43 @@
+* {
+    background-image: none;
+    font-family: Ubuntu, sans-serif;
+}
+
+window {
+    background-color: transparent;
+}
+
+button {
+    color: #8665a5;
+    background-color: #17171f;
+    border-style: solid;
+    border-width: 3.5px;
+    background-repeat: no-repeat;
+    opacity: 0.69;
+    background-position: center;
+    background-size: 25%;
+}
+
+#lock {
+    background-image: url("./icons/lock.svg");
+}
+
+#logout {
+    background-image: url("./icons/logout.svg");
+}
+
+#suspend {
+    background-image: url("./icons/sleep.svg");
+}
+
+#hibernate {
+    background-image: url("./icons/pause.svg");
+}
+
+#shutdown {
+    background-image: url("./icons/power-off.svg");
+}
+
+#reboot {
+    background-image: url("./icons/reboot.svg");
+}

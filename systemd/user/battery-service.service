@@ -1,0 +1,9 @@
+[Unit]
+Description=Watch the battery percentage
+
+[Service]
+Type=exec
+ExecStart=/home/luvuyo/.config/hypr/scripts/battery-level.sh
+
+[Install]
+WantedBy=default.target

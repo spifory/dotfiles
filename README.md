@@ -1,4 +1,4 @@
-# dotfiles
+# spifory/dotfiles
 
 My Linux configuration files.
 
@@ -7,7 +7,7 @@ My Linux configuration files.
 
 ## Things used
 
-- Linux Distribution: [EndeavourOS](https://endeavouros.com/) _for now™_
+- Linux Distribution: [Arch Linux](https://archlinux.org)
 - Desktop Environment/Window Manager: [Hyprland](https://hyprland.org/)
 - App Launcher: [wofi](https://hg.sr.ht/~scoopta/wofi/)
 - Task Bar: [Waybar](https://github.com/Alexays/Waybar/)
@@ -15,3 +15,4 @@ My Linux configuration files.
 - Notifications: [dunst](https://dunst-project.org/)
 - Clipboard Manager: [cliphist](https://github.com/sentriz/cliphist/)
 - Screenshot Tool: [grimblast](https://github.com/hyprwm/contrib/)
+- Logout Menu: [wlogout](https://github.com/ArtsyMacaw/wlogout)

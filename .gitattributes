@@ -1,0 +1,4 @@
+* text=auto
+
+*.sh text linguist-detectable
+*.ini text linguist-detectable
