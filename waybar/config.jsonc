@@ -43,7 +43,8 @@
         "interval": 1,
         "exec": "$XDG_CONFIG_HOME/hypr/scripts/player-status.sh",
         "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl previous"
+        "on-click-right": "playerctl previous",
+        "tooltip": false
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
