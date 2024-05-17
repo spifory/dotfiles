@@ -1,0 +1,96 @@
+* {
+    /* `otf-font-awesome-5` is required to be installed for icons */
+   font-family: Ubuntu, "Font Awesome 5 Free Solid";
+   font-size: 15.5px;
+}
+
+window#waybar {
+    background-color: #0D0616;
+    opacity: 0.81;
+}
+
+#custom-wofi, #custom-media, #workspaces, #tray, #idle_inhibitor {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    color: #DF73FF
+}
+
+#workspaces button {
+    color: #8665a5;
+}
+
+#custom-wofi,
+#workspaces,
+#custom-media,
+#pulseaudio,
+#pulseaudio.microphone,
+#network,
+#backlight,
+#battery,
+#clock,
+#idle_inhibitor,
+#tray {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    min-height: 1em;
+    background-color: #38155c;
+    opacity: 0.86;
+}
+
+#pulseaudio:not(.microphone) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left: 15px;
+    border: 3px solid #9966cc;
+    border-right-style: none;
+}
+
+#custom-wofi,
+#workspaces,
+#idle_inhibitor,
+#custom-media,
+#tray {
+    border: 3px solid #9966cc;
+}
+
+#clock {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-right: 15px;
+    border: 3px solid #9966cc;
+    border-left-style: none;
+}
+
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#clock {
+    padding-right: 15px;
+    border-top: 3px solid #9966cc;
+    border-bottom: 3px solid #9966cc;
+}
+
+#custom-wofi,
+#workspaces,
+#custom-media,
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#clock,
+#idle_inhibitor {
+    color: #DF73FF;
+}
+
+#tray {
+    margin-left: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

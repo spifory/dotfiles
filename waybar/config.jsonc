@@ -1,0 +1,107 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 58,  
+    "modules-left": [
+        "custom/wofi",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "idle_inhibitor",
+        "custom/media"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "pulseaudio#microphone",
+        "network",
+        "backlight",
+        "battery",
+        "clock",
+        "tray"
+    ],
+    "custom/wofi": {
+        "format": "{}",
+        "return-type": "json",
+        "on-click": "pkill wofi || wofi --prompt \"$(shuf -n 1 ~/.config/random-stuff.txt)\"",
+        "exec": "echo '{\"text\": \"\", \"tooltip\": \"app launcher\"}'"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "all-outputs": true,
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+    "custom/media": {
+        /* because mpd doesn't want to work */
+        "format": "{}",
+        "interval": 1,
+        "exec": "$XDG_CONFIG_HOME/hypr/scripts/player-status.sh",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl previous"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
+        "format-muted": " muted",
+        "on-click": "amixer set Master toggle"
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " muted",
+        "on-click-right": "pavucontrol"
+    },
+    "network": {
+        "interval": 5,
+        "format": " {bandwidthDownBits} /  {bandwidthUpBits}",
+        "format-alt": " {essid} ({signalStrength}%)"
+    },
+    "backlight": {
+        "format": " {percent}%",
+        "on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh up",
+        "on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh down"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "interval": 1,
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "on-click": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh power-saver",
+        "on-click-middle": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh balanced",
+        "on-click-right": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh performance"
+    },
+    "clock": {
+        "interval": 1,
+        "format": " {:%T}",
+        "format-alt": " {:%c}"
+    },
+    "tray": {
+        "spacing": 13,
+        "icon-size": 13
+    }
+}
