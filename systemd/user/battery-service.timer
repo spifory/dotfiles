@@ -1,0 +1,11 @@
+[Unit]
+Description=Watch the battery percentage every microsecond
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1s
+AccuracySec=1us
+Unit=battery-service.service
+
+[Install]
+WantedBy=timers.target
