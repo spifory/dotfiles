@@ -1,0 +1,4 @@
+allow_images = true
+insensitive = true
+show = drun
+line_wrap = word
