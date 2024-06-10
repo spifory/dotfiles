@@ -9,7 +9,7 @@ window#waybar {
     opacity: 0.81;
 }
 
-#custom-wofi, #custom-media, #workspaces, #tray, #idle_inhibitor {
+#custom-wofi, #custom-media, #workspaces, #custom-notifications, #tray, #idle_inhibitor {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 10px;
@@ -28,6 +28,7 @@ window#waybar {
 #custom-wofi,
 #workspaces,
 #custom-media,
+#custom-notifications,
 #pulseaudio,
 #pulseaudio.microphone,
 #network,
@@ -54,6 +55,7 @@ window#waybar {
 #custom-wofi,
 #workspaces,
 #idle_inhibitor,
+#custom-notifications,
 #custom-media,
 #tray {
     border: 3px solid #9966cc;
@@ -80,6 +82,7 @@ window#waybar {
 #custom-wofi,
 #workspaces,
 #custom-media,
+#custom-notifications,
 #pulseaudio,
 #network,
 #backlight,

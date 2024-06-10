@@ -9,4 +9,4 @@ This repository consists of (almost) all the files I use on my laptop, which I m
 - Terminal: [Kitty](https://sw.kovidgoyal.net/kitty) with [Oh-My-Zsh](https://ohmyz.sh)
 - App Launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
 - Bar: [Waybar](https://github.com/Alexays/Waybar/)
-- Notification Daemon: [Dunst](https://github.com/dunst-project/dunst/)
+- Notification Daemon: [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
