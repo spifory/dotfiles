@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # export ARCHFLAGS="-arch x86_64"
 
 # run neofetch on startup
-hyfetch --backend fastfetch --args '--pipe false'
+hyfetch --args '--pipe false'
 
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 
