@@ -48,7 +48,7 @@
         }
     },
     "custom/notifications": {
-        "tooltip": false,
+        "tooltip": true,
         "format": "{icon}",
         "format-icons": {
             "notification": "<span><sup></sup></span>",
