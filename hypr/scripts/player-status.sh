@@ -26,5 +26,5 @@ fi
 if [[ -z $currently_playing ]]; then
     echo ""
 else
-    echo "$icon $currently_playing" | recode utf8..html
+    echo "$icon $(echo $currently_playing | recode ascii..html)"
 fi
