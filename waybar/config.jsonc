@@ -135,7 +135,7 @@
     "icon-size": 13
   },
   "privacy": {
-    "icon-spacing": 4,
+    "icon-spacing": 10,
     "modules": [
       {
         "type": "screenshare"
