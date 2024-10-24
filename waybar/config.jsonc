@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 58,  
+    "height": 58,
     "modules-left": [
         "custom/wofi",
         "hyprland/workspaces"
@@ -9,7 +9,7 @@
     "modules-center": [
         "idle_inhibitor",
         "custom/notifications",
-        "custom/media"
+        "mpris"
     ],
     "modules-right": [
         "pulseaudio",
@@ -67,13 +67,21 @@
         "on-click-right": "swaync-client -d -sw",
         "escape": true
     },
-    "custom/media": {
-        /* because mpd doesn't want to work */
-        "format": "{}",
+    "mpris": {
+        "format": "{status_icon} {dynamic}",
         "interval": 1,
-        "exec": "$XDG_CONFIG_HOME/hypr/scripts/player-status.sh",
-        "on-click": "playerctl play-pause",
-        "on-click-right": "playerctl previous"
+        "dynamic-order": [
+            "artist",
+            "album",
+            "title",
+            "position",
+            "length"
+        ],
+        "status-icons": {
+            "playing": "",
+            "paused": "",
+            "stopped": ""
+        }
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",

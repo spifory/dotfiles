@@ -9,7 +9,7 @@ window#waybar {
 }
 
 #custom-wofi,
-#custom-media,
+#mpris,
 #workspaces,
 #custom-notifications,
 #tray,
@@ -31,7 +31,7 @@ window#waybar {
 
 #custom-wofi,
 #workspaces,
-#custom-media,
+#mpris,
 #custom-notifications,
 #pulseaudio,
 #pulseaudio.microphone,
@@ -59,7 +59,7 @@ window#waybar {
 #workspaces,
 #idle_inhibitor,
 #custom-notifications,
-#custom-media,
+#mpris,
 #tray {
     border: 3px solid rgba(141, 67, 252, 0.86);
 }
@@ -84,7 +84,7 @@ window#waybar {
 
 #custom-wofi,
 #workspaces,
-#custom-media,
+#mpris,
 #custom-notifications,
 #pulseaudio,
 #network,
