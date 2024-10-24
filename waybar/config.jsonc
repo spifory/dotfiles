@@ -18,7 +18,8 @@
         "backlight",
         "battery",
         "clock",
-        "tray"
+        "tray",
+        "privacy"
     ],
     "custom/wofi": {
         "format": "{}",
@@ -132,5 +133,19 @@
     "tray": {
         "spacing": 13,
         "icon-size": 13
+    },
+    "privacy": {
+        "icon-spacing": 4,
+        "modules": [
+            {
+                "type": "screenshare"
+            },
+            {
+                "type": "audio-out"
+            },
+            {
+                "type": "audio-in"
+            }
+        ]
     }
 }

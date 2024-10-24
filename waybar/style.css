@@ -9,11 +9,12 @@ window#waybar {
 }
 
 #custom-wofi,
-#mpris,
 #workspaces,
+#idle_inhibitor,
 #custom-notifications,
+#mpris,
 #tray,
-#idle_inhibitor {
+#privacy {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 10px;
@@ -31,16 +32,17 @@ window#waybar {
 
 #custom-wofi,
 #workspaces,
-#mpris,
+#idle_inhibitor,
 #custom-notifications,
+#mpris,
 #pulseaudio,
 #pulseaudio.microphone,
 #network,
 #backlight,
 #battery,
 #clock,
-#idle_inhibitor,
-#tray {
+#tray,
+#privacy {
     margin-top: 8px;
     margin-bottom: 8px;
     min-height: 1em;
@@ -60,7 +62,8 @@ window#waybar {
 #idle_inhibitor,
 #custom-notifications,
 #mpris,
-#tray {
+#tray,
+#privacy {
     border: 3px solid rgba(141, 67, 252, 0.86);
 }
 
@@ -84,14 +87,15 @@ window#waybar {
 
 #custom-wofi,
 #workspaces,
-#mpris,
+#idle_inhibitor,
 #custom-notifications,
+#mpris,
 #pulseaudio,
 #network,
 #backlight,
 #battery,
 #clock,
-#idle_inhibitor {
+#privacy {
     color: rgb(255, 255, 255);
 }
 
