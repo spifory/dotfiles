@@ -1,25 +1,25 @@
 * {
-    font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 #window,
 #input {
-    background-color: rgba(11, 5, 20, 0.86);
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
+  background-color: rgba(11, 5, 20, 0.86);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 #entry {
-    border-radius: 20px;
-    padding-left: 20px;
+  border-radius: 20px;
+  padding-left: 20px;
 }
 
 #entry:selected {
-    border-radius: 0px;
-    background-color: rgba(141, 67, 252, 0.86);
-    color: rgba(255, 255, 255, 0.86);
+  border-radius: 0px;
+  background-color: rgba(141, 67, 252, 0.86);
+  color: rgba(255, 255, 255, 0.86);
 }
 
 #img {
-    margin-right: 6px;
+  margin-right: 6px;
 }

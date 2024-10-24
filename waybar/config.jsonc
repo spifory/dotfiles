@@ -1,151 +1,151 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 58,
-    "modules-left": [
-        "custom/wofi",
-        "hyprland/workspaces"
-    ],
-    "modules-center": [
-        "idle_inhibitor",
-        "custom/notifications",
-        "mpris"
-    ],
-    "modules-right": [
-        "pulseaudio",
-        "pulseaudio#microphone",
-        "network",
-        "backlight",
-        "battery",
-        "clock",
-        "tray",
-        "privacy"
-    ],
-    "custom/wofi": {
-        "format": "{}",
-        "return-type": "json",
-        "on-click": "pkill wofi || wofi --prompt \"$(shuf -n 1 ~/.config/random-stuff.txt)\"",
-        "exec": "echo '{\"text\": \"\", \"tooltip\": \"app launcher\"}'"
-    },
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "all-outputs": true,
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "urgent": "",
-            "focused": "",
-            "default": ""
-        }
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "custom/notifications": {
-        "tooltip": true,
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "<span><sup></sup></span>",
-            "none": "",
-            "dnd-notification": "<span><sup></sup></span>",
-            "dnd-none": "",
-            "inhibited-notification": "<span><sup></sup></span>",
-            "inhibited-none": "",
-            "dnd-inhibited-notification": "<span><sup></sup></span>",
-            "dnd-inhibited-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
-    },
-    "mpris": {
-        "format": "{status_icon} {dynamic}",
-        "interval": 1,
-        "dynamic-order": [
-            "artist",
-            "album",
-            "title",
-            "position",
-            "length"
-        ],
-        "status-icons": {
-            "playing": "",
-            "paused": "",
-            "stopped": ""
-        }
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-icons": [
-            "",
-            "",
-            ""
-        ],
-        "format-muted": " muted",
-        "on-click": "amixer set Master toggle"
-    },
-    "pulseaudio#microphone": {
-        "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": " muted",
-        "on-click-right": "pavucontrol"
-    },
-    "network": {
-        "interval": 5,
-        "format": " {bandwidthDownBits} /  {bandwidthUpBits}",
-        "format-alt": " {essid} ({signalStrength}%)"
-    },
-    "backlight": {
-        "format": " {percent}%",
-        "on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh up",
-        "on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh down"
-    },
-    "battery": {
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "interval": 1,
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "on-click": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh power-saver",
-        "on-click-middle": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh balanced",
-        "on-click-right": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh performance"
-    },
-    "clock": {
-        "interval": 1,
-        "format": " {:%T}",
-        "format-alt": " {:%c}"
-    },
-    "tray": {
-        "spacing": 13,
-        "icon-size": 13
-    },
-    "privacy": {
-        "icon-spacing": 4,
-        "modules": [
-            {
-                "type": "screenshare"
-            },
-            {
-                "type": "audio-out"
-            },
-            {
-                "type": "audio-in"
-            }
-        ]
+  "layer": "top",
+  "position": "top",
+  "height": 58,
+  "modules-left": [
+    "custom/wofi",
+    "hyprland/workspaces"
+  ],
+  "modules-center": [
+    "idle_inhibitor",
+    "custom/notifications",
+    "mpris"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "pulseaudio#microphone",
+    "network",
+    "backlight",
+    "battery",
+    "clock",
+    "tray",
+    "privacy"
+  ],
+  "custom/wofi": {
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "pkill wofi || wofi --prompt \"$(shuf -n 1 ~/.config/random-stuff.txt)\"",
+    "exec": "echo '{\"text\": \"\", \"tooltip\": \"app launcher\"}'"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "all-outputs": true,
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "urgent": "",
+      "focused": "",
+      "default": ""
     }
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "custom/notifications": {
+    "tooltip": true,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "mpris": {
+    "format": "{status_icon} {dynamic}",
+    "interval": 1,
+    "dynamic-order": [
+      "artist",
+      "album",
+      "title",
+      "position",
+      "length"
+    ],
+    "status-icons": {
+      "playing": "",
+      "paused": "",
+      "stopped": ""
+    }
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
+    "format-muted": " muted",
+    "on-click": "amixer set Master toggle"
+  },
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": " muted",
+    "on-click-right": "pavucontrol"
+  },
+  "network": {
+    "interval": 5,
+    "format": " {bandwidthDownBits} /  {bandwidthUpBits}",
+    "format-alt": " {essid} ({signalStrength}%)"
+  },
+  "backlight": {
+    "format": " {percent}%",
+    "on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh up",
+    "on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh down"
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "interval": 1,
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-click": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh power-saver",
+    "on-click-middle": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh balanced",
+    "on-click-right": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh performance"
+  },
+  "clock": {
+    "interval": 1,
+    "format": " {:%T}",
+    "format-alt": " {:%c}"
+  },
+  "tray": {
+    "spacing": 13,
+    "icon-size": 13
+  },
+  "privacy": {
+    "icon-spacing": 4,
+    "modules": [
+      {
+        "type": "screenshare"
+      },
+      {
+        "type": "audio-out"
+      },
+      {
+        "type": "audio-in"
+      }
+    ]
+  }
 }

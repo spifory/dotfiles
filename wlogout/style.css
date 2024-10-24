@@ -1,41 +1,41 @@
 * {
-    font-family: Ubuntu, sans-serif;
+  font-family: Ubuntu, sans-serif;
 }
 
 window {
-    background-color: rgba(11, 5, 20, 0.86);
+  background-color: rgba(11, 5, 20, 0.86);
 }
 
 
 button {
-    color: rgb(255, 255, 255);
-    background-color: rgba(11, 5, 20, 0.86);
-    border: 3.25 solid rgba(141, 67, 252, 0.86);
-    background-position: center;
-    background-size: 25%;
-    margin: 13px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(11, 5, 20, 0.86);
+  border: 3.25 solid rgba(141, 67, 252, 0.86);
+  background-position: center;
+  background-size: 25%;
+  margin: 13px;
 }
 
 #lock {
-    background-image: url("./icons/lock.svg");
+  background-image: url("./icons/lock.svg");
 }
 
 #logout {
-    background-image: url("./icons/logout.svg");
+  background-image: url("./icons/logout.svg");
 }
 
 #suspend {
-    background-image: url("./icons/sleep.svg");
+  background-image: url("./icons/sleep.svg");
 }
 
 #hibernate {
-    background-image: url("./icons/pause.svg");
+  background-image: url("./icons/pause.svg");
 }
 
 #shutdown {
-    background-image: url("./icons/power-off.svg");
+  background-image: url("./icons/power-off.svg");
 }
 
 #reboot {
-    background-image: url("./icons/reboot.svg");
+  background-image: url("./icons/reboot.svg");
 }
