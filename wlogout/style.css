@@ -3,14 +3,14 @@
 }
 
 window {
-    background-color: #150B25;
+    background-color: rgba(11, 5, 20, 0.86);
 }
 
 
 button {
-    color: #B25CD2;
-    background-color: #361659;
-    border: 3.25 solid;
+    color: rgb(255, 255, 255);
+    background-color: rgba(11, 5, 20, 0.86);
+    border: 3.25 solid rgba(141, 67, 252, 0.86);
     background-position: center;
     background-size: 25%;
     margin: 13px;

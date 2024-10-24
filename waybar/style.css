@@ -1,15 +1,19 @@
 * {
     /* `otf-font-awesome-5` is required to be installed for icons */
-   font-family: Ubuntu, "Font Awesome 5 Free Solid";
-   font-size: 15.5px;
+    font-family: Ubuntu, "Font Awesome 5 Free Solid";
+    font-size: 15.5px;
 }
 
 window#waybar {
-    background-color: #0D0616;
-    opacity: 0.81;
+    background-color: rgba(11, 5, 20, 0.86);
 }
 
-#custom-wofi, #custom-media, #workspaces, #custom-notifications, #tray, #idle_inhibitor {
+#custom-wofi,
+#custom-media,
+#workspaces,
+#custom-notifications,
+#tray,
+#idle_inhibitor {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 10px;
@@ -18,11 +22,11 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #DF73FF
+    color: rgb(255, 255, 255);
 }
 
 #workspaces button {
-    color: #8665a5;
+    color: rgb(141, 67, 252);
 }
 
 #custom-wofi,
@@ -40,15 +44,14 @@ window#waybar {
     margin-top: 8px;
     margin-bottom: 8px;
     min-height: 1em;
-    background-color: #38155c;
-    opacity: 0.86;
+    background-color: rgb(11, 5, 20);
 }
 
 #pulseaudio:not(.microphone) {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     padding-left: 15px;
-    border: 3px solid #9966cc;
+    border: 3px solid rgba(141, 67, 252, 0.86);
     border-right-style: none;
 }
 
@@ -58,14 +61,14 @@ window#waybar {
 #custom-notifications,
 #custom-media,
 #tray {
-    border: 3px solid #9966cc;
+    border: 3px solid rgba(141, 67, 252, 0.86);
 }
 
 #clock {
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     padding-right: 15px;
-    border: 3px solid #9966cc;
+    border: 3px solid rgba(141, 67, 252, 0.86);
     border-left-style: none;
 }
 
@@ -75,8 +78,8 @@ window#waybar {
 #battery,
 #clock {
     padding-right: 15px;
-    border-top: 3px solid #9966cc;
-    border-bottom: 3px solid #9966cc;
+    border-top: 3px solid rgba(141, 67, 252, 0.86);
+    border-bottom: 3px solid rgba(141, 67, 252, 0.86);
 }
 
 #custom-wofi,
@@ -89,7 +92,7 @@ window#waybar {
 #battery,
 #clock,
 #idle_inhibitor {
-    color: #DF73FF;
+    color: rgb(255, 255, 255);
 }
 
 #tray {

@@ -4,10 +4,9 @@
 
 #window,
 #input {
-    background-color: #190928;
-    color: #9486E1;
+    background-color: rgba(11, 5, 20, 0.86);
+    color: rgb(255, 255, 255);
     border-radius: 20px;
-    opacity: 0.80;
 }
 
 #entry {
@@ -16,9 +15,9 @@
 }
 
 #entry:selected {
-    border-radius: 20px;
-    background-color: #6935B3;
-    color: #DECFED;
+    border-radius: 0px;
+    background-color: rgba(141, 67, 252, 0.86);
+    color: rgba(255, 255, 255, 0.86);
 }
 
 #img {
