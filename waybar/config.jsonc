@@ -71,6 +71,7 @@
   "mpris": {
     "format": "{status_icon} {dynamic}",
     "interval": 1,
+    "title-len": 50,
     "dynamic-order": [
       "artist",
       "album",
