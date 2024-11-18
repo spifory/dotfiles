@@ -93,7 +93,7 @@
       ""
     ],
     "format-muted": " muted",
-    "on-click": "amixer set Master toggle"
+    "on-click": "~/.config/hypr/scripts/volume-control.fish toggle-mute"
   },
   "pulseaudio#microphone": {
     "format": "{format_source}",
@@ -108,8 +108,8 @@
   },
   "backlight": {
     "format": " {percent}%",
-    "on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh up",
-    "on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brightness.sh down"
+    "on-scroll-up": "$XDG_CONFIG_HOME/hypr/scripts/brightness-control.fish up",
+    "on-scroll-down": "$XDG_CONFIG_HOME/hypr/scripts/brightness-control.fish down"
   },
   "battery": {
     "format": "{icon} {capacity}%",
@@ -122,9 +122,9 @@
       "",
       ""
     ],
-    "on-click": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh power-saver",
-    "on-click-middle": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh balanced",
-    "on-click-right": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.sh performance"
+    "on-click": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.fish power-saver",
+    "on-click-middle": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.fish balanced",
+    "on-click-right": "$XDG_CONFIG_HOME/hypr/scripts/power-profiles.fish performance"
   },
   "clock": {
     "interval": 1,
