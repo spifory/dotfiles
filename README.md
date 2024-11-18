@@ -6,7 +6,8 @@ This repository consists of (almost) all the files I use on my laptop, which I m
 
 - Distro: [Arch Linux](https://archlinux.org)
 - WM/DE: [Hyprland](https://hyprland.org) (with other [Hypr](https://github.com/hyprwm) projects)
-- Terminal: [Kitty](https://sw.kovidgoyal.net/kitty) with [Oh-My-Zsh](https://ohmyz.sh)
+- Terminal Emulator: [Kitty](https://sw.kovidgoyal.net/kitty)
+- Shell: [Fish](https://fishshell.com) with [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 - App Launcher: [Wofi](https://hg.sr.ht/~scoopta/wofi)
 - Bar: [Waybar](https://github.com/Alexays/Waybar/)
-- Notification Daemon: [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)
+- Notification Daemon: [Dunst](https://dunst-project.org)
