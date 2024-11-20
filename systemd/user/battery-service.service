@@ -3,7 +3,9 @@ Description=Watch the battery percentage
 
 [Service]
 Type=exec
-ExecStart=/home/luvuyo/.config/hypr/scripts/battery-level.sh
+ExecStart=/home/luvuyo/.config/hypr/scripts/battery-level.fish
+Restart=always
+RestartSec=3s
 
 [Install]
 WantedBy=default.target

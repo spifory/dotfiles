@@ -3,7 +3,7 @@ Description=Watch the battery percentage every microsecond
 
 [Timer]
 OnBootSec=1min
-OnUnitActiveSec=1s
+OnUnitActiveSec=30s
 AccuracySec=1us
 Unit=battery-service.service
 
